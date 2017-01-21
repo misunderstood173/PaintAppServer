@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>251</width>
+    <height>203</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PaintApp Server</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="editPort">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>1234</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="btnStart">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Start</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="labelPort">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Port</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QLabel" name="label">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Connected IPs</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="3">
+     <widget class="QLabel" name="labelListIP">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>251</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuApplication">
+    <property name="title">
+     <string>Application</string>
+    </property>
+    <addaction name="actionLocal_IP"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuApplication"/>
+  </widget>
+  <action name="actionLocal_IP">
+   <property name="text">
+    <string>Local IP</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
